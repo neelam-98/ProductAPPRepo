@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Item from './Component/Item';
+import { BrowserRouter ,Route, Routes } from 'react-router-dom';
+import Navbar from './Component/Navbar';
+import Category from './Component/Category';
+import Products from './Component/Products';
+import PreNextButton from './Component/PreNextButton';
+import Cart from './Component/Cart';
+import UserLogin from './Component/UserLogin';
+import Error from './Component/Error';
+import Sort from './Component/Sort';
+import HomePage from './Component/HomePage';
+import LoginGoogle from './Component/GoogleLogin';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <BrowserRouter>
+    {/* <Navbar/> */}
+    {/* <UserLogin/> */}
+      <Routes>
+        <Route path="/" element={<UserLogin/>}/>
+        {/* <Route path="/" element={<LoginGoogle/>}/> */}
+        <Route path='/home' element={<HomePage/>}/>
+        <Route path="/product" element={<Products/>}/>
+        <Route path="/product/:id" element={<Item/>}/>
+        <Route path='/category/:category' element={<Category/>}/>
+        <Route path='/category/:category/:id' element={<Item/>}/>
+        <Route path='/sort' element={<Sort/>}/>
+        <Route path='/sort/:id' element={<Item/>}/>
+        <Route path="/cart" element={<Cart/>}/>
+        <Route path='*' element={<Error/>}/>
+
+      </Routes>
+      {/* <PreNextButton/> */}
+    </BrowserRouter>
+    </>
   );
 }
 

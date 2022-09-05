@@ -1,0 +1,156 @@
+.login_page{
+    margin-left: 400px;
+    margin-top: 50px;
+    /* background-color: lightgrey; */
+    /* border: ; */
+    width: 450px;
+    padding-top: 20px;
+    padding-left: 20px;
+    height: 270px;
+}
+.festival_icon{
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 2px;
+}
+.festival_block{
+    display: flex;
+}
+.festival{
+    color:black;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgrey;
+}
+.navbar_link{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 12px;
+}
+.login{
+    margin-right: 40px;
+    margin-top: 12px;
+}
+.submit_btn{
+    background-color: green;
+    color: white;
+}
+.cart_block{
+    display: flex;
+}
+.cart{
+    height: 50px;
+    width: 50px;
+}
+.cart_text{
+    background-color: red;
+    color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: relative;
+    right: 25px;
+    text-align: center;
+}
+.home_block{
+    height: 420px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.latest{
+    text-align: center;
+}
+.block{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    height: 390px;
+    margin: 11px;
+    width: 300px;
+    text-align: center;
+    border:1px solid;
+    border-color: lightgrey;
+    padding-top: 25px;
+}
+.card:hover{
+    background-color: lightgrey;
+}
+img{
+    width: 250px;
+    height: 250px;
+}
+.item_img{
+    width: 400px;
+    height: 400px;
+    padding-left: 50px;
+
+}
+button{
+    background-color: transparent;
+    border-radius: 1px solid;
+    border-color: lightgrey;
+    height: 30px;
+    width: 90px;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+.item_style{
+    display: flex;
+    flex-direction: row;
+}
+.item_detail{
+    padding-left:200px;
+    padding-right: 50px;
+}
+.price{
+    font-size: 30px;
+}
+.category_button{
+    display: flex;
+    justify-content:center;
+}
+.catButton{
+    width: 120px;
+    height: 40px;
+    margin:5px;
+}
+.prenext_button:hover{
+    color:white;
+    background-color: blue;
+    margin-left: 20px;
+}
+.error{
+    text-align: center;
+    margin: 80px;
+}
+.error_img{
+    height: 200px;
+    width: 200px;
+}
+.sort_line{
+    text-align: center;
+}
+/* .g-signin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+ }  */
+ .google_btn{
+    width: 160px;
+    text-align: center;
+ }
